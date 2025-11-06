@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Reviewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Automated Resume Reviewer</h1>
+    
+    <input type="file" id="resumeFile" accept="application/pdf">
+    <button id="analyzeBtn">Analyze Resume</button>
+    
+    <div id="loading">⏳ Extracting & Analyzing your resume...</div>
+    
+    <!-- Structured AI Output -->
+    <div id="results" class="hidden">
+      <div class="card">
+        <h2>⭐ Strengths</h2>
+        <ul id="strengths"></ul>
+      </div>
+      <div class="card">
+        <h2>⚠️ Weaknesses</h2>
+        <ul id="weaknesses"></ul>
+      </div>
+      <div class="card">
+        <h2>💡 Suggestions</h2>
+        <ul id="suggestions"></ul>
+      </div>
+      <div class="card score">
+        <h2>📊 Resume Score</h2>
+        <p id="score">-</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
