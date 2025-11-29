@@ -1,17 +1,20 @@
 {
-  "name": "snr",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "name": "ai-resume-reviewer",
+  "version": "2.0.0",
+  "description": "AI-powered resume analysis with JWT authentication",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["resume", "ai", "gemini", "jwt", "authentication"],
+  "author": "Subhrajyoti Basu",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "node-fetch": "^3.3.2"
   }
 }
